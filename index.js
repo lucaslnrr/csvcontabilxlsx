@@ -53,6 +53,7 @@ app.post('/upload', upload.single('csvFile'), async (req, res) => {
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 
     // Send XLSX file as response
+    alert("teste");
     res.send(xlsxBuffer);
   } catch (error) {
     console.error('Error handling file upload:', error);
